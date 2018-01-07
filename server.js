@@ -78,6 +78,13 @@ app.get
   );
 });
 
+app.get
+('/project',
+(req,res) =>
+{
+  res.render('project.hbs')
+});
+
 app.listen(port,
 () => {console.log(`Server is listening on port ${port}`);}
 );
